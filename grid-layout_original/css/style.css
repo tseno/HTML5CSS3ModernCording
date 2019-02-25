@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/* --------------------------------
+ * base
+ * -------------------------------- */
 html {
   font-size: 62.5%;
 }
@@ -17,6 +20,11 @@ a:link, a:visited, a:hover, a:active {
   color: #7C5119;
   text-decoration: none;
 }
+
+
+/* --------------------------------
+ * item
+ * -------------------------------- */
 .item {
   width: 180px;
   margin-bottom: 4px;
@@ -34,7 +42,7 @@ a:link, a:visited, a:hover, a:active {
   margin: 15px 9px 10px;
   color: #aaa;
   letter-spacing: 1px;
-  font-family: "Trebuchet MS",  "Hiragino Kaku Gothic ProN",  Meiryo, sans-serif;
+  font-family: "Trebuchet MS", "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
 }
 .item .category::before {
   content: '';
@@ -53,13 +61,13 @@ a:link, a:visited, a:hover, a:active {
 .item > a {
   display: block;
   margin: -8px -8px -11px;
-  padding: 8px 8px 11px; 
+  padding: 8px 8px 11px;
   border-radius: inherit;
   color: #777;
   transition: all 0.3s;
 }
 .item > a:hover {
-  box-shadow: 0 0 6px -1px rgba(0,0,0,0.3);
+  box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.3);
   opacity: 0.8;
 }
 .item-maindish,
@@ -90,6 +98,11 @@ a:link, a:visited, a:hover, a:active {
 .item-l .image {
   height: 403px;
 }
+
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
 .header {
   padding: 25px 0;
   border-bottom: none;
@@ -129,3 +142,62 @@ a:link, a:visited, a:hover, a:active {
 .nav-item a:hover::after {
   width: 100%;
 }
+
+
+/* --------------------------------
+ * challenge
+ * -------------------------------- */
+/*
+.item {
+  overflow: hidden;
+}
+.item > a::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  left: 8px;
+  display: block;
+  height: 109px;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+.item-m > a::before {
+  height: 146px;
+}
+.item-l > a::before {
+  height: 403px;
+}
+.item > a:hover::before {
+  opacity: 1;
+}
+.item > a::after {
+  content: 'MORE';
+  position: absolute;
+  top: 43.5px;
+  left: 150%;
+  display: block;
+  width: 100px;
+  margin-left: -50px;
+  padding: 8px;
+  border: 3px solid #fff;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 1.6rem;
+  font-family: "Trebuchet MS", "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.item-m > a::after {
+  top: 62px;
+}
+.item-l > a::after {
+  top: 190.5px;
+}
+.item > a:hover::after {
+  left: 50%;
+  opacity: 1;
+}
+*/
