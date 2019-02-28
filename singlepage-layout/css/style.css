@@ -3,11 +3,6 @@
 html {
   font-size: 62.5%;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 body {
   background: #151515 url("../images/bg.png") no-repeat fixed left bottom;
@@ -17,6 +12,12 @@ body {
   font-size: 1.4rem;
   font-family: "Raleway", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .header {
   padding: 170px 30px 80px;
 }
@@ -220,10 +221,15 @@ body {
   width: 100%;
   margin-bottom: 10px;
   padding: 15px;
+  outline: none;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 0;
   background-color: rgba(255, 255, 255, 0.05);
   color: #fff;
+}
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
 }
 .contact-form textarea {
   height: 150px;
@@ -251,7 +257,7 @@ body {
     background-image: none;
   }   
 }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .site-title-sub::before,
   .site-title-sub::after {
     display: block;
